@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.pokemon-detail {
+  overflow: auto;
+  background: url(darkball.jpg);
+}
+
+.active-screen {
+  height: 100%;
+}
+
+.back-button {
+  position: fixed;
+  top: 2vw;
+  left: 1vw;
+  z-index: 10;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.shiny-button {
+  position: fixed !important;
+  top: 2vw;
+  right: 1vw;
+  z-index: 10;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.non-shiny {
+  position: fixed !important;
+  top: 2vw;
+  right: 1vw;
+  z-index: 10;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.non-shiny svg path {
+  fill: rgb(255, 255, 255);
+}
+
+.non-shiny:hover {
+  cursor: pointer;
+}
+
+.shiny-button:hover {
+  cursor: pointer;
+}
+
+.pokemon-info {
+  margin-top: 4vw;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.pokemon-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.pokemon-description {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5vw 0px 10px;
+}
+
+.pokemon-detail-name {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 65px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.pokemon-detail-number {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  color: white;
+}
+
+.tab-button {
+  position: relative;
+  border: 0px;
+  outline: 1px;
+  width: 170px;
+  background: none;
+  font-size: 45px;
+  line-height: 38px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  text-transform: capitalize;
+  font-family: "VT323", sans-serif;
+}
+
+.tab-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.highlight-pokeball {
+  position: absolute;
+  top: -34px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  width: 170px;
+  height: auto;
+  outline: solid 1px;
+  border-radius: 45%;
+}
