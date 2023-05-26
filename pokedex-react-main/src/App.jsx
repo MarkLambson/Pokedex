@@ -1,5 +1,5 @@
 import "./components/styles.css";
-import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Main from "./components/Main";
 import PokemonDetail from "./components/PokemonDetail/PokemonDetail";
 

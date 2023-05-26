@@ -4,7 +4,6 @@ import "./About.css";
 const About = ({ pokemon, pokemonSpecies, currentColor }) => {
   const [flavorText, setFlavorText] = useState("");
 
-  // extracts the english flavor text to display
   useEffect(() => {
     if (pokemon.data) {
       fetch(
